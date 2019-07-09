@@ -378,7 +378,7 @@ header {
     padding-left: 3rem;
     padding-right: 3rem;
   }
-  .component-card {
+  .component-card, .component-block-list-lg {
     border-radius: 8px;
   }
   .component-card-wrap {
