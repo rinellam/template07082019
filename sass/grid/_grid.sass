@@ -1,0 +1,122 @@
+
+// Grid
+
+.grid
+    margin: 0
+    display: grid
+    display: -ms-grid
+    -ms-grid-rows: auto auto auto auto
+    -ms-grid-columns: 1fr
+    grid-template: "header" "component-top" "component-middle" / 1fr
+
+header
+    padding: 2rem 1rem 3rem 1rem
+    margin-bottom: 1rem
+
+.component-card
+    margin-bottom: 1rem
+
+.component-card-wrap
+    display: grid
+    display: -ms-grid
+    -ms-grid-rows: auto auto auto auto auto auto
+    -ms-grid-columns: 1fr
+    grid-template: "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" / 1fr
+    padding: 1rem 1rem 3rem 1rem
+    margin-bottom: 1rem
+
+    .sub-component-card
+        display: grid
+        display: -ms-grid
+        -ms-grid-rows: auto auto
+        -ms-grid-columns: 1fr
+        grid-template: "img" "card-list-bulls" / 1fr
+        padding: 2rem 2rem 3rem 2rem
+        border-radius: 8px
+        margin-bottom: 1rem
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        //-webkit-box-shadow: 5px 5px 12px 1px rgba(41,41,57,0.4)
+        //-moz-box-shadow: 5px 5px 12px 1px rgba(41,41,57,0.4)
+        //box-shadow: 5px 5px 12px 1px rgba(41,41,57,0.4)
+
+.component-box-wrap
+    display: grid
+    display: -ms-grid
+    -ms-grid-rows: auto auto auto auto
+    -ms-grid-columns: 1fr
+    grid-template: "sub-component-box" "sub-component-box" "sub-component-box" "sub-component-box" / 1fr
+    padding: 1rem 1rem 3rem 1rem
+
+    .sub-component-box
+        display: grid
+        display: -ms-grid
+        -ms-grid-rows: auto auto auto auto auto
+        -ms-grid-columns: 1fr
+        grid-template: "subhead-text--md" "subhead-text--sm" "date-text" "normal-text--white" "card-list-nobulls" / 1fr
+        padding: 2rem 2rem
+        border-radius: 8px
+        margin-bottom: 1rem
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        //-webkit-box-shadow: 5px 5px 12px 1px rgba(41,41,57,0.4)
+        //-moz-box-shadow: 5px 5px 12px 1px rgba(41,41,57,0.4)
+        //box-shadow: 5px 5px 12px 1px rgba(41,41,57,0.4)
+
+@media screen and (min-width: 414px)
+    header
+        padding-left: 2rem //more pad full size page
+        padding-right: 2rem //more pad full size page
+
+    .component-card-wrap
+        padding-left: 2rem //more pad full size page
+        padding-right: 2rem //more pad full size page
+
+    .component-box-wrap
+        padding-left: 2rem //more pad full size page
+        padding-right: 2rem //more pad full size page
+
+
+@media screen and (min-width: 768px)
+  .component-card-wrap
+        display: grid
+        display: -ms-grid
+        -ms-grid-rows: auto auto auto
+        -ms-grid-columns: 1fr 1fr
+        grid-template: "sub-component-card sub-component-card"  "sub-component-card sub-component-card"  "sub-component-card sub-component-card"  / 1fr 1fr
+        grid-column-gap: 1rem
+
+@media screen and (min-width: 990px)
+    .container
+        width: 75%
+        margin: 0 auto
+    
+    header
+        border-radius: 8px
+        margin-top: 3rem
+        padding-left: 3rem //more pad full size page
+        padding-right: 3rem //more pad full size page
+
+    .component-card
+        border-radius: 8px
+
+    .component-card-wrap
+        display: grid
+        display: -ms-grid
+        -ms-grid-rows: auto auto auto
+        -ms-grid-columns: 1fr 1fr 1fr
+        grid-template: "sub-component-card sub-component-card sub-component-card" "sub-component-card sub-component-card sub-component-card" / 1fr 1fr 1fr
+        padding-left: 3rem //more pad full size page
+        padding-right: 3rem //more pad full size page
+
+    .component-box-wrap
+        padding-left: 3rem //more pad full size page
+        padding-right: 3rem //more pad full size page
+
+    .component-box
+        border-radius: 8px
+        margin-bottom: 3rem

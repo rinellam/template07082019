@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700&display=swap");
+*, h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+.title-text {
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f9faf5;
+  margin-bottom: 1rem;
+  letter-spacing: 0.15rem;
+}
+
+.lead-in-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.30rem;
+  font-weight: 400;
+  color: #f9faf5;
+}
+
+.subhead-text--lg {
+  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #0b245b;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .30rem;
+}
+
+@media screen and (min-width: 414px) {
+  .subhead-text--lg {
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .subhead-text--lg {
+    padding-left: 2rem;
+  }
+}
+
+.subhead-text--md {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  margin-bottom: 1rem;
+}
+
+span {
+  font-weight: 700;
+}
+
+.subhead-text--sm {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.normal-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.normal-text--white {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.date-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  letter-spacing: .25rem;
+  margin-bottom: 1rem;
+}
+
+.card-list-bulls {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #292939;
+  list-style-position: inside;
+  padding-left: 1.40rem;
+  text-indent: -.80rem;
+}
+
+.card-list-nobulls {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  list-style-type: none;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+  padding-left: 1.40rem;
+  text-indent: -.70rem;
+  margin-top: 1rem;
+}
+
+.nobull-list {
+  list-style-type: none;
+  text-indent: 0rem;
+}
+
+.sub-component-box li:not(:last-child) {
+  margin-bottom: .75rem;
+}
+
+.sub-component-card li:not(:last-child) {
+  margin-bottom: .75rem;
+}
+
+.fa-info-circle {
+  font-size: 1.35rem;
+  margin-right: .55rem;
+}
+
+.fa-image, .fa-comments, .fa-code, .fa-users, .fa-chart-area, .fa-code-branch {
+  font-size: 6rem;
+  color: #292939;
+}
+
+.fa-bullseye {
+  margin-right: .50rem;
+  color: rgba(250, 250, 250, 0.5);
+}
+
+.fa-palette {
+  font-size: 6rem;
+  color: #2E364F;
+}
+
+.fpo-image {
+  margin: 1rem auto;
+}
+
+header {
+  background: #C02648;
+}
+
+.component-card {
+  background: #E1E0E0;
+}
+
+.sub-component-card {
+  background: #FFFFFF;
+}
+
+.component-box {
+  background: #E1E0E0;
+}
+
+.sub-component-box {
+  background: #2E364F;
+}
+
+img.round-image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+
+img.regular-image {
+  width: 10rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.grid {
+  margin: 0;
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-rows: auto auto auto auto;
+  -ms-grid-columns: 1fr;
+  grid-template: "header" "component-top" "component-middle" / 1fr;
+}
+
+header {
+  padding: 2rem 1rem 3rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.component-card {
+  margin-bottom: 1rem;
+}
+
+.component-card-wrap {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-rows: auto auto auto auto auto auto;
+  -ms-grid-columns: 1fr;
+  grid-template: "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" / 1fr;
+  padding: 1rem 1rem 3rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.component-card-wrap .sub-component-card {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-rows: auto auto;
+  -ms-grid-columns: 1fr;
+  grid-template: "img" "card-list-bulls" / 1fr;
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.component-box-wrap {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-rows: auto auto auto auto;
+  -ms-grid-columns: 1fr;
+  grid-template: "sub-component-box" "sub-component-box" "sub-component-box" "sub-component-box" / 1fr;
+  padding: 1rem 1rem 3rem 1rem;
+}
+
+.component-box-wrap .sub-component-box {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-rows: auto auto auto auto auto;
+  -ms-grid-columns: 1fr;
+  grid-template: "subhead-text--md" "subhead-text--sm" "date-text" "normal-text--white" "card-list-nobulls" / 1fr;
+  padding: 2rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 414px) {
+  header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .component-card-wrap {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .component-box-wrap {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .component-card-wrap {
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-rows: auto auto auto;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template: "sub-component-card sub-component-card"  "sub-component-card sub-component-card"  "sub-component-card sub-component-card"  / 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .container {
+    width: 75%;
+    margin: 0 auto;
+  }
+  header {
+    border-radius: 8px;
+    margin-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .component-card {
+    border-radius: 8px;
+  }
+  .component-card-wrap {
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-rows: auto auto auto;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template: "sub-component-card sub-component-card sub-component-card" "sub-component-card sub-component-card sub-component-card" / 1fr 1fr 1fr;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .component-box-wrap {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .component-box {
+    border-radius: 8px;
+    margin-bottom: 3rem;
+  }
+}

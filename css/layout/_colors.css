@@ -1,0 +1,19 @@
+header {
+  background: #C02648;
+}
+
+.component-card {
+  background: #E1E0E0;
+}
+
+.sub-component-card {
+  background: #FFFFFF;
+}
+
+.component-box {
+  background: #E1E0E0;
+}
+
+.sub-component-box {
+  background: #2E364F;
+}
