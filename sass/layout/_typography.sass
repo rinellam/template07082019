@@ -10,13 +10,10 @@ html
 //1. Header
 
 .title-text
-    //font-family: 'Montserrat', sans-serif
     font-family: 'Merriweather', serif
-    //font-size: 2.8rem
     font-size: 3rem
     font-weight: 700
-    //color: #ED6767
-    color: #f9faf5
+    color: #F9FAF5
     margin-bottom: 1rem
     letter-spacing: 0.15rem
 
@@ -30,7 +27,6 @@ html
 // 2. Subheads
 
 .subhead-text--lg
-    font-family: 'Merriweather', serif
     font-family: 'Montserrat', sans-serif
     //font-size: 1.75rem
     font-size: 1.45rem
@@ -40,14 +36,29 @@ html
     margin-left: 1rem
     margin-top: 2rem
     text-transform: uppercase //
-    letter-spacing: .30rem //
+    letter-spacing: .15rem //
+
+.subhead-block-list--lg
+    font-family: 'Montserrat', sans-serif
+    //font-size: 1.75rem
+    font-size: 1.45rem
+    font-weight: 700
+    //color: #793F5C
+    color: #C02648
+    margin-left: 1rem
+    margin-top: 2rem
+    text-transform: uppercase //
+    letter-spacing: .15rem //
+
+   
+
 
 @media screen and (min-width: 414px)
-    .subhead-text--lg
+    .subhead-text--lg, .subhead-block-list--lg
         padding-left: 1rem
 
 @media screen and (min-width: 990px)
-    .subhead-text--lg
+    .subhead-text--lg, .subhead-block-list--lg
         padding-left: 2rem
 
 .subhead-text--md
@@ -125,6 +136,9 @@ span
     list-style-type: none
     text-indent: 0rem
 
+.sub-component-block-list-lg li:not(:last-child)
+    margin-bottom: .75rem
+    
 .sub-component-box li:not(:last-child)
     margin-bottom: .75rem
 
@@ -139,7 +153,7 @@ span
 
 .fa-image, .fa-comments, .fa-code, .fa-users, .fa-chart-area, .fa-code-branch, 
     font-size: 6rem
-    color: #292939
+    color: #0b245b
 
 .fa-bullseye
     margin-right: .50rem

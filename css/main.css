@@ -12,7 +12,7 @@ html {
   font-family: 'Merriweather', serif;
   font-size: 3rem;
   font-weight: 700;
-  color: #f9faf5;
+  color: #F9FAF5;
   margin-bottom: 1rem;
   letter-spacing: 0.15rem;
 }
@@ -25,7 +25,6 @@ html {
 }
 
 .subhead-text--lg {
-  font-family: 'Merriweather', serif;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.45rem;
   font-weight: 700;
@@ -33,17 +32,28 @@ html {
   margin-left: 1rem;
   margin-top: 2rem;
   text-transform: uppercase;
-  letter-spacing: .30rem;
+  letter-spacing: .15rem;
+}
+
+.subhead-block-list--lg {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #C02648;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
 }
 
 @media screen and (min-width: 414px) {
-  .subhead-text--lg {
+  .subhead-text--lg, .subhead-block-list--lg {
     padding-left: 1rem;
   }
 }
 
 @media screen and (min-width: 990px) {
-  .subhead-text--lg {
+  .subhead-text--lg, .subhead-block-list--lg {
     padding-left: 2rem;
   }
 }
@@ -122,6 +132,10 @@ span {
   text-indent: 0rem;
 }
 
+.sub-component-block-list-lg li:not(:last-child) {
+  margin-bottom: .75rem;
+}
+
 .sub-component-box li:not(:last-child) {
   margin-bottom: .75rem;
 }
@@ -137,7 +151,7 @@ span {
 
 .fa-image, .fa-comments, .fa-code, .fa-users, .fa-chart-area, .fa-code-branch {
   font-size: 6rem;
-  color: #292939;
+  color: #0b245b;
 }
 
 .fa-bullseye {
@@ -163,6 +177,14 @@ header {
 }
 
 .sub-component-card {
+  background: #FFFFFF;
+}
+
+.component-block-list-lg {
+  background: #E1E0E0;
+}
+
+.sub-component-block-list-lg {
   background: #FFFFFF;
 }
 
@@ -239,6 +261,44 @@ header {
   align-items: flex-start;
 }
 
+.component-block-list-lg {
+  margin-bottom: 1rem;
+}
+
+.component-block-list-lg-wrap {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: 1fr;
+  grid-template: "sub-component-block-list-lg" / 1fr;
+  padding: 1rem 2rem 3rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.component-block-list-lg-wrap .sub-component-block-list-lg {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: 1fr;
+  grid-template: "card-list-bulls" / 1fr;
+  padding: 2rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
 .component-box-wrap {
   display: grid;
   display: -ms-grid;
@@ -296,6 +356,15 @@ header {
     grid-template: "sub-component-card sub-component-card"  "sub-component-card sub-component-card"  "sub-component-card sub-component-card"  / 1fr 1fr;
     grid-column-gap: 1rem;
   }
+  .component-box-wrap {
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-rows: auto auto auto auto;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template: "sub-component-box sub-component-box" "sub-component-box sub-component-box" "sub-component-box sub-component-box" "sub-component-box sub-component-box" "sub-component-box sub-component-box" / 1fr 1fr;
+    padding: 1rem 1rem 3rem 1rem;
+    grid-column-gap: 1rem;
+  }
 }
 
 @media screen and (min-width: 990px) {
@@ -318,6 +387,19 @@ header {
     -ms-grid-rows: auto auto auto;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template: "sub-component-card sub-component-card sub-component-card" "sub-component-card sub-component-card sub-component-card" / 1fr 1fr 1fr;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .component-box-wrap {
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-rows: auto auto auto auto;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template: "sub-component-box sub-component-box sub-component-box" "sub-component-box sub-component-box sub-component-box" "sub-component-box sub-component-box sub-component-box" / 1fr 1fr 1fr;
+    padding: 1rem 1rem 3rem 1rem;
+    grid-column-gap: 1rem;
+  }
+  .component-block-list-lg-wrap {
     padding-left: 3rem;
     padding-right: 3rem;
   }
