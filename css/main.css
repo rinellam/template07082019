@@ -28,7 +28,7 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.45rem;
   font-weight: 700;
-  color: #0b245b;
+  color: #ed6a5a;
   margin-left: 1rem;
   margin-top: 2rem;
   text-transform: uppercase;
@@ -39,7 +39,7 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.45rem;
   font-weight: 700;
-  color: #C02648;
+  color: #ed6a5a;
   margin-left: 1rem;
   margin-top: 2rem;
   text-transform: uppercase;
@@ -109,7 +109,7 @@ span {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
-  color: #292939;
+  color: #121212;
   list-style-position: inside;
   padding-left: 1.40rem;
   text-indent: -.80rem;
@@ -151,7 +151,7 @@ span {
 
 .fa-image, .fa-comments, .fa-code, .fa-users, .fa-chart-area, .fa-code-branch {
   font-size: 6rem;
-  color: #0b245b;
+  color: #084887;
 }
 
 .fa-bullseye {
@@ -161,7 +161,7 @@ span {
 
 .fa-palette {
   font-size: 6rem;
-  color: #2E364F;
+  color: #084887;
 }
 
 .fpo-image {
@@ -169,11 +169,11 @@ span {
 }
 
 header {
-  background: #C02648;
+  background: #1E90FF;
 }
 
 .component-card {
-  background: #E1E0E0;
+  background: #dfe0e2;
 }
 
 .sub-component-card {
@@ -181,7 +181,7 @@ header {
 }
 
 .component-block-list-lg {
-  background: #E1E0E0;
+  background: #dfe0e2;
 }
 
 .sub-component-block-list-lg {
@@ -189,11 +189,11 @@ header {
 }
 
 .component-box {
-  background: #E1E0E0;
+  background: #dfe0e2;
 }
 
 .sub-component-box {
-  background: #2E364F;
+  background: #084887;
 }
 
 img.round-image {
